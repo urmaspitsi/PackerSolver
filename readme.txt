@@ -1,3 +1,5 @@
+Solver for 3D bin packing problem
+
 to run locally use command:
   uvicorn main:app --reload
 
