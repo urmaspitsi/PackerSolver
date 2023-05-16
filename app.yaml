@@ -1,0 +1,7 @@
+
+runtime: python38
+instance_class: F4
+
+#entrypoint: uvicorn main:app --reload
+#entrypoint: gunicorn main:app --workers 1 --worker-class
+entrypoint: gunicorn -w 1 -k uvicorn.workers.UvicornWorker main:app
